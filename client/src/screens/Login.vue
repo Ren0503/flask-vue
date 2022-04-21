@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="login">
     <form @submit.prevent="login">
-      <h1>Login</h1>
+      <h1>Login with Account</h1>
       <p class="error">{{ error }}</p>
       <input v-model="username" type="text" placeholder="Username" ref="username">
       <input v-model="password" type="password" placeholder="Password">

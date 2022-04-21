@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="signup">
     <form @submit.prevent="signUp">
-      <h1>Sign Up</h1>
+      <h1>Sign Up New Account</h1>
       <p class="error" :class="{ 'deprecated-error' : deprecatedError }">{{ error }}</p>
       <input type="text" v-model="username" placeholder="Username" ref="username">
       <input type="email" v-model="email" placeholder="E-Mail">
