@@ -78,7 +78,7 @@ class Post(Document):
     comments = ListField(EmbeddedDocumentField(Comment))
     created = DateTimeField(required=True, default=datetime.datetime.now())
     image = StringField()
-    status = StringField()
+    description = StringField()
     upvotes = ListField(ReferenceField(User, reverse_delete_rule=CASCADE))
     downvotes = ListField(ReferenceField(User, reverse_delete_rule=CASCADE))
 
